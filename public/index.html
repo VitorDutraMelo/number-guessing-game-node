@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="game-shell">
+      <header class="hero">
+        <div class="target-icon">🎯</div>
+        <div>
+          <h1>Jogo de <span>Adivinhação</span></h1>
+          <p>Tente adivinhar o número entre 1 e 100</p>
+        </div>
+      </header>
+
+      <section class="content-grid">
+        <aside class="sidebar">
+          <div class="card how-to-play">
+            <div class="card-title">
+              <span>🏆</span>
+              <h2>Como jogar</h2>
+            </div>
+            <ol>
+              <li>Digite um número entre 1 e 100.</li>
+              <li>Clique em "Enviar palpite".</li>
+              <li>Veja as dicas e tente adivinhar o número!</li>
+            </ol>
+          </div>
+
+          <div class="card stats-card">
+            <div class="card-title">
+              <span>📈</span>
+              <h2>Estatísticas</h2>
+            </div>
+
+            <div class="stat-row blue">
+              <strong>Tentativas</strong>
+              <span id="tentativas">0</span>
+            </div>
+
+            <div class="stat-row green">
+              <strong>Melhor jogo</strong>
+              <span id="melhorJogo">0</span>
+            </div>
+          </div>
+        </aside>
+
+        <section class="main-card card">
+          <h2>Seu palpite</h2>
+
+          <form id="guessForm" class="guess-form">
+            <input
+              type="number"
+              id="palpiteInput"
+              placeholder="Digite um número..."
+              min="1"
+              max="100"
+              autocomplete="off"
+              required
+            />
+
+            <button type="submit">✈️ Enviar palpite</button>
+          </form>
+
+          <div class="hint-card">
+            <div class="hint-title">💡 <strong>Dica</strong></div>
+            <p id="dicaTexto">O número que estou pensando está entre 1 e 100.</p>
+          </div>
+
+          <div class="message-box" id="messageBox">
+            <div class="question-circle">?</div>
+            <p>Faça seu primeiro palpite para começar!</p>
+          </div>
+
+          <button id="resetBtn" class="reset-btn" type="button">🔄 Novo jogo</button>
+        </section>
+      </section>
+
+      <footer>
+        <span>💙</span>
+        <p>Divirta-se e boa sorte!</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "number-guessing-game-node",
+  "version": "1.0.0",
+  "description": "Jogo de adivinhação de números com Node.js, HTML, CSS e JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["nodejs", "javascript", "game", "guessing-game"],
+  "author": "Vitor Melo",
+  "license": "MIT"
+}
